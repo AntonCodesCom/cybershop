@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import facebook from './facebook.svg';
 import tiktok from './tiktok.svg';
 import instagram from './instagram.svg';
-import iphone from './iphone.png';
+import smartphone from './smartphone.png';
 
 export default function RouteHome() {
   return (
@@ -25,32 +25,47 @@ export default function RouteHome() {
         </button>
       </header>
       <main className="flex-1">
-        <div className="text-center bg-[#211C24] text-white px-4 pt-20">
-          <div className="text-gray-300 text-2xl font-semibold mb-5">
-            Pro.Beyond.
-          </div>
-          <div className="text-7xl mb-5">
-            <span className="font-thin">IPhone 14</span>{' '}
-            <span className="font-bold">Pro</span>
-          </div>
-          <div className="text-gray-300 text-lg font-medium mb-8">
-            Created to change everything for the better. For everyone
-          </div>
-          <button
+        <div className="bg-[#150800]">
+          <div
             className="
-            border
-            border-white
-            rounded-md
-            font-medium
-            px-14
-            py-3
-          "
+          container 
+          grid grid-cols-1 md:grid-cols-2
+          text-white pt-16
+        "
           >
-            Shop Now
-          </button>
-          <div className="mb-20" />
-          <div className="mx-auto px-8 max-w-80">
-            <Image alt="IPhone 14 Pro" src={iphone} />
+            <div className="flex flex-col items-center md:items-start justify-center text-center md:text-left pb-14">
+              <div className="text-gray-400 text-2xl font-semibold mb-5">
+                Featured Pro.
+              </div>
+              <div className="text-6xl xl:text-8xl mb-5">
+                <span className="font-thin">Item 1L</span>{' '}
+                <span className="font-bold">Pro</span>
+              </div>
+              <div
+                className="
+              max-w-xs lg:max-w-none mx-auto md:ml-0
+              text-gray-400 text-lg font-medium text-balance 
+              mb-8
+            "
+              >
+                The featured product of the shop is shown here. True
+              </div>
+              <button
+                className="
+              border border-white rounded-md
+              font-medium
+              px-14 py-3
+            "
+              >
+                Shop Now
+              </button>
+            </div>
+            <div className="max-w-xs lg:max-w-sm xl:max-w-md mx-auto md:mr-0 2xl:mx-auto">
+              <Image
+                alt="https://unsplash.com/photos/black-smartphone-displaying-11-00-83ypHTv6J2M"
+                src={smartphone}
+              />
+            </div>
           </div>
         </div>
         <div className="container py-5">main content</div>
