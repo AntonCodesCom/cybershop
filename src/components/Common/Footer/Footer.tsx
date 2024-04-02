@@ -1,20 +1,19 @@
 import Image from 'next/image';
 import CommonLogo from '../Logo';
-import facebook from './facebook.svg';
-import instagram from './instagram.svg';
-import tiktok from './tiktok.svg';
+import github from './github.svg';
+import linkedin from './linkedin-in.svg';
 
 export default function CommonFooter() {
   return (
     <footer className="bg-black text-neutral-300 text-sm text-white py-12">
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-y-7">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-8 gap-y-7">
           <div className="lg:col-span-2 flex flex-col items-center lg:items-start text-center lg:text-left">
             <CommonLogo fill="white" />
             <div className="mb-5" />
-            <p className="mx-auto text-balance leading-loose px-4 lg:px-0">
-              We are a residential interior design firm located in Portland. Our
-              boutique-studio offers more than
+            <p className="mx-auto lg:ml-0 text-balance leading-loose px-4 lg:px-0">
+              This webpage was built by AntonCodes on Next.js and Tailwind CSS
+              based on a free design.
             </p>
           </div>
           <div className="text-center lg:text-left">
@@ -44,14 +43,17 @@ export default function CommonFooter() {
             </div>
           </div>
           <div className="flex justify-center lg:justify-start gap-x-8 text-white">
-            <a href="#" className="inline-flex justify-center w-6 h-6">
-              <Image alt="facebook" src={facebook} />
+            <a
+              href="https://github.com/AntonCodesCom"
+              className="inline-flex justify-center w-6 h-6"
+            >
+              <Image alt="github" src={github} className="invert" />
             </a>
-            <a href="#" className="inline-flex justify-center w-6 h-6">
-              <Image alt="tiktok" src={tiktok} />
-            </a>
-            <a href="#" className="inline-flex justify-center w-6 h-6">
-              <Image alt="instagram" src={instagram} />
+            <a
+              href="https://www.linkedin.com/in/antoncodes"
+              className="inline-flex justify-center w-6 h-6"
+            >
+              <Image alt="linkedin" src={linkedin} className="invert" />
             </a>
           </div>
         </div>
