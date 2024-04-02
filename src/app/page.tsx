@@ -99,7 +99,9 @@ export default function RouteHome() {
                 </div>
                 <div>
                   <button className="w-full rounded-lg bg-black py-3">
-                    <span className="invert text-sm font-medium">Buy Now</span>
+                    <span className="text-white text-sm font-medium">
+                      Buy Now
+                    </span>
                   </button>
                 </div>
               </div>
