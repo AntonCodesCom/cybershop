@@ -44,7 +44,7 @@ export default function CommonFooter() {
           </div>
           <div className="flex justify-center lg:justify-start gap-x-8 text-white">
             <a
-              href="https://github.com/AntonCodesCom"
+              href="https://github.com/AntonCodesCom/cybershop"
               className="inline-flex justify-center w-6 h-6"
             >
               <Image alt="github" src={github} className="invert" />

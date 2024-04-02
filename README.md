@@ -5,6 +5,8 @@ A demo storefront application built on Next.js and Tailwind CSS.
 - 100% responsive;
 - conventional file & folder structure compatible with defaults.
 
+Live demo: https://cybershop-lemon.vercel.app/
+
 ## Getting Started
 
 1. Clone this repository.
