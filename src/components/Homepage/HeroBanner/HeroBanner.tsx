@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import featured from './smartphone-featured.png';
+import Link from 'next/link';
 
 export default function HomepageHeroBanner() {
   return (
@@ -28,8 +29,8 @@ export default function HomepageHeroBanner() {
           >
             The featured product of the shop is shown here. True
           </div>
-          <a
-            href="#"
+          <Link
+            href="catalog"
             className="
               border border-white rounded-md
               font-medium
@@ -37,7 +38,7 @@ export default function HomepageHeroBanner() {
             "
           >
             Shop Now
-          </a>
+          </Link>
         </div>
         <div className="max-w-xs lg:max-w-sm xl:max-w-md mx-auto md:mr-0 2xl:mx-auto">
           <Image

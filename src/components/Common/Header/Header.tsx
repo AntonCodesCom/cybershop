@@ -12,6 +12,8 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline';
 import CommonLogo from '../Logo';
+import Link from 'next/link';
+import collections from '@/data/collections';
 
 // local data
 const mainMenuItems = [
@@ -42,34 +44,6 @@ const iconMenuItems = [
   {
     name: 'Account',
     Icon: UserIcon,
-  },
-];
-
-// local data
-const collections = [
-  {
-    name: 'Phones',
-    materialIcon: 'phone_iphone',
-  },
-  {
-    name: 'Computers',
-    materialIcon: 'desktop_mac',
-  },
-  {
-    name: 'Smart Watches',
-    materialIcon: 'watch',
-  },
-  {
-    name: 'Cameras',
-    materialIcon: 'photo_camera',
-  },
-  {
-    name: 'Headphones',
-    materialIcon: 'headphones',
-  },
-  {
-    name: 'Gaming',
-    materialIcon: 'sports_esports',
   },
 ];
 
@@ -116,10 +90,10 @@ export default function CommonHeader() {
           className="flex items-center justify-between gap-8"
           aria-label="Global"
         >
-          <a href="#">
+          <Link href="/">
             <span className="sr-only">CyberShop</span>
             <CommonLogo fill="black" />
-          </a>
+          </Link>
           <div className="hidden sm:block flex-1">
             <SearchForm />
           </div>
@@ -162,8 +136,8 @@ export default function CommonHeader() {
           {collections.map((x, i) => (
             <Fragment key={i}>
               {i > 0 && <div className="h-3/6 border-l border-l-neutral-400" />}
-              <a
-                href="#"
+              <Link
+                href="catalog"
                 className={classNames(
                   'flex items-center gap-2 text-neutral-400 p-2',
                   i === 0 && '-ml-2',
@@ -176,7 +150,7 @@ export default function CommonHeader() {
                 <span className="inline-block font-medium pt-0.5">
                   {x.name}
                 </span>
-              </a>
+              </Link>
             </Fragment>
           ))}
         </div>
