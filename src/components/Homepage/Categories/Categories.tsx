@@ -12,7 +12,7 @@ export default function HomepageCategories() {
           {collections.map((x, i) => (
             <a
               key={i}
-              href="#"
+              href={`/catalog/${x.slug}`}
               className="text-center rounded-2xl bg-neutral-200 py-8"
             >
               <div className="material-symbols-outlined text-5xl mb-4">
