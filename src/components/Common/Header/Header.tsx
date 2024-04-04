@@ -137,7 +137,7 @@ export default function CommonHeader() {
             <Fragment key={i}>
               {i > 0 && <div className="h-3/6 border-l border-l-neutral-400" />}
               <Link
-                href="catalog"
+                href={`/catalog/${x.slug}`}
                 className={classNames(
                   'flex items-center gap-2 text-neutral-400 p-2',
                   i === 0 && '-ml-2',

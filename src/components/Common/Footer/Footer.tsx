@@ -11,9 +11,24 @@ export default function CommonFooter() {
           <div className="lg:col-span-2 flex flex-col items-center lg:items-start text-center lg:text-left">
             <CommonLogo fill="white" />
             <div className="mb-5" />
-            <p className="mx-auto lg:ml-0 text-balance leading-loose px-4 lg:px-0">
+            <p className="mx-auto lg:ml-0 text-balance leading-loose px-4 lg:px-0 mb-4">
               This webpage was built by AntonCodes on Next.js and Tailwind CSS
-              based on a free design.
+              based on a{' '}
+              <a
+                href="https://freebiesbug.com/figma-freebies/tech-store/"
+                target="_blank"
+                rel="noreferrer"
+                className="underline"
+              >
+                free design
+              </a>
+              .
+            </p>
+            <p className="mx-auto lg:ml-0 text-balance leading-loose px-4 lg:px-0">
+              Imagery from{' '}
+              <a href="https://unsplash.com" target="_blank" rel="noreferrer">
+                unsplash.com
+              </a>
             </p>
           </div>
           <div className="text-center lg:text-left">
